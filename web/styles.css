@@ -4,13 +4,18 @@
 }
 
 .query_box{
+    margin: 10%;
+    padding-top: 0%;
+    padding-left: 5%;
+    padding-right: 5%;
     border: 3px solid grey;
     background-color: #B5BBBD;
-    opacity: .3;
+    background-color: rgba(181,187,189,0.7);
     float: center;
     border-radius: 25px;
 }
 
-h1 {
-    opacity: 1.0;
-}
+.results_background{
+    background-image: url('/img/results.jpg');
+    background-size: cover;
+    }
