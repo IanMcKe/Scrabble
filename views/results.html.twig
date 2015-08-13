@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Scrabble Results!</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class ='container'>
+            {% if result >= 1 %}
+                <h1>Your word was {{ word }}</h1>
+                <h2>and it is worth {{ result }} points!</h2>
+                    {% if result >= 12 %}
+                    <h3>That's hella points.  You probably win.</h3>
+                    {% elseif 11 >= result >= 3 %}
+                    <h3> That's an ok word.  You could do better. </h3>
+                    {% elseif result <= 3 %}
+                    <h3> Meh.  Try again. </h3>
+                    {% endif%}
+            {% else %}
+                <h1>You typed: {{ word }}</h1>
+                <h2>That's not a word</h2>
+                <h3>Try again?</h3>
+            {% endif %}
+            <form action="/">
+                <button type='submit' class='btn btn-danger'>Try another word?</a></button>
+            </form>
+        </div>
+    </body>
+</html>

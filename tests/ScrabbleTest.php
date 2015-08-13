@@ -93,6 +93,7 @@
            //Assert
            $this->assertEquals(10, $result);
        }
+
        function test_wordTest()
        {
            //Arrange
@@ -100,10 +101,23 @@
            $input = "bag";
 
            //Act
-           $result - $test_scrabble->checkScore($input);
+           $result = $test_scrabble->checkScore($input);
 
            //Assert
            $this->assertEquals(6, $result);
+       }
+
+       function test_wrongWordTest()
+       {
+           //Arrange
+           $test_scrabble = new Scrabble;
+           $input = "abcde";
+
+           //Act
+           $result = $test_scrabble->checkScore($input);
+
+           //Assert
+           $this->assertEquals(0, $result);
        }
     }
 ?>
