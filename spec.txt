@@ -1,0 +1,45 @@
+1. A user enters either A, E, I, O, U, L, N, R, S or T  and the program will return a value of 1
+
+    Input: "A"
+    Output: 1
+
+2. A user enters D or G and the program will return a value of 2
+
+    Input: "D"
+    Output: 2
+
+3. A user enters B, C, M or P  and the program will return a value of 3
+
+    Input: "B"
+    Output: 3
+
+4. A user enters F, H, V, W or Y and the program will return a value of 4
+
+    Input: "F"
+    Output: 4
+
+5. A user enters K and the program will return a value of 5
+
+    Input: "K"
+    Output: 5
+
+6. A user enters J, or X and the program will return a value of 8
+
+    Input: "J"
+    Output: 8
+
+7. A user enters Q, or Z and the program will return a value of 10
+
+    Input: "Q"
+    Output: 10
+
+8. A user enters the word "Bag" and the program will return a value of 6
+
+    Input: "Bag"
+    Output: 6
+
+**Might not do**
+9. A user enters a non word string / Proper Nouns and the program will tell them its not a word
+
+    Input: "abcde"
+    Output: "That isn't a word!"
