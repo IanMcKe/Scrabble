@@ -28,5 +28,19 @@
             //Assert
             $this->assertEquals(2, $result);
        }
+
+       function test_threePointTest()
+       {
+           //Arrange
+           $test_scrabble = new Scrabble;
+           $input = "B";
+
+           //Act
+           $result = $test_scrabble->checkScore($input);
+
+           //Assert
+           $this->assertEquals(3, $result);
+       }
+
     }
 ?>
