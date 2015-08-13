@@ -91,8 +91,19 @@
            $result = $test_scrabble->checkScore($input);
 
            //Assert
-           $$this->assertEquals(10, $result);
+           $this->assertEquals(10, $result);
        }
+       function test_wordTest()
+       {
+           //Arrange
+           $test_scrabble = new Scrabble;
+           $input = "bag";
 
+           //Act
+           $result - $test_scrabble->checkScore($input);
+
+           //Assert
+           $this->assertEquals(6, $result);
+       }
     }
 ?>

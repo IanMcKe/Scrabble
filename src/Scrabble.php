@@ -40,6 +40,10 @@
                 case "X":
                     return 8;
                     break;
+                case "Q":
+                case "Z":
+                    return 10;
+                    break;
         }
 
         }
