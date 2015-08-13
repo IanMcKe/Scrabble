@@ -42,5 +42,57 @@
            $this->assertEquals(3, $result);
        }
 
+       function test_fourPointTest()
+       {
+           //Arrange
+           $test_scrabble = new Scrabble;
+           $input = "V";
+
+           //Act
+           $result = $test_scrabble->checkScore($input);
+
+           //Assert
+           $this->assertEquals(4, $result);
+
+       }
+
+       function test_fivePointTest()
+       {
+           //Arrange
+           $test_scrabble = new Scrabble;
+           $input = "K";
+
+           //Act
+           $result = $test_scrabble->checkScore($input);
+
+           //Assert
+           $this->assertEquals(5, $result);
+       }
+
+       function test_eightPointTest()
+       {
+           //Arrange
+           $test_scrabble = new Scrabble;
+           $input = "X";
+
+           //Act
+           $result = $test_scrabble->checkScore($input);
+
+           //Assert
+           $this->assertEquals(8, $result);
+       }
+       function test_tenPointTest()
+       {
+           //Arrange
+           $test_scrabble = new Scrabble;
+           $input = "Q";
+
+           //Act
+           $result = $test_scrabble->checkScore($input);
+
+           //Assert
+           $$this->assertEquals(10, $result);
+       }
+
     }
 ?>
