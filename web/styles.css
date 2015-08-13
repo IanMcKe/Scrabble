@@ -1,3 +1,16 @@
 .scrabble-picture{
-    background-image: url('/Users/Guest/Scrabble/web/img/areyouready.jpg')
+    background-image: url('/img/areyouready.jpg');
+    background-size: cover;
+}
+
+.query_box{
+    border: 3px solid grey;
+    background-color: #B5BBBD;
+    opacity: .3;
+    float: center;
+    border-radius: 25px;
+}
+
+h1 {
+    opacity: 1.0;
 }
